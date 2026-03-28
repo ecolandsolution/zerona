@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZERONA | 프리미엄 공기청정살균기</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+        body { font-family: 'Noto Sans KR', sans-serif; scroll-behavior: smooth; }
+        .vivid-gradient { background: linear-gradient(135deg, #2563eb 0%, #7c3aed 50%, #db2777 100%); }
+        .hero-video-container { min-height: 90vh; position: relative; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+        .hero-video { width: 100%; height: 100%; object-fit: cover; opacity: 0.6; position: absolute; inset: 0; }
+        .glass-nav { background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(20px); }
+        .card-hover:hover { transform: translateY(-10px); transition: all 0.4s ease; }
+        .tech-img:hover { filter: brightness(1.1) contrast(1.1); transition: 0.3s; }
+        .aspect-16-9 { aspect-ratio: 16 / 9; }
+        #mobile-menu { transition: max-height 0.3s ease-out; overflow: hidden; max-height: 0; }
+        #mobile-menu.open { max-height: 500px; }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 mr-12 lg:mr-24">
+                        <span class="text-3xl font-black text-blue-600 tracking-tighter uppercase">ZERONA</span>
+                    </div>
+                    <div class="hidden md:flex space-x-10 lg:space-x-16 text-sm font-bold uppercase tracking-widest items-center">
+                        <a href="#about" class="hover:text-blue-600 transition">Brand</a>
+                        <a href="#differentiation" class="hover:text-blue-600 transition">Diff</a>
+                        <a href="#tech" class="hover:text-blue-600 transition">Tech</a>
+                        <a href="#products" class="hover:text-blue-600 transition">Products</a>
+                        <a href="#product-details" class="hover:text-blue-600 transition">Details</a>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <a href="zerona product/proposal.pdf" class="vivid-gradient text-white px-6 py-2 rounded-full shadow-xl hover:scale-105 transition transform text-center leading-tight flex items-center justify-center min-w-[140px] min-h-[54px]" target="_blank">
+                        <span class="text-[15px] font-black tracking-tighter">제안서<br>다운로드</span>
+                    </a>
+                </div>
+                <div class="md:hidden text-gray-900 cursor-pointer" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars text-2xl"></i>
+                </div>
+            </div>
+            <div id="mobile-menu" class="md:hidden bg-white/95 backdrop-blur-lg border-t border-gray-100">
+                <div class="px-4 pt-4 pb-8 space-y-4 font-bold uppercase text-center">
+                    <a href="#about" class="block py-2 text-gray-600" onclick="toggleMobileMenu()">Brand</a>
+                    <a href="#differentiation" class="block py-2 text-gray-600" onclick="toggleMobileMenu()">Diff</a>
+                    <a href="#tech" class="block py-2 text-gray-600" onclick="toggleMobileMenu()">Tech</a>
+                    <a href="#products" class="block py-2 text-gray-600" onclick="toggleMobileMenu()">Products</a>
+                    <a href="#product-details" class="block py-2 text-gray-600" onclick="toggleMobileMenu()">Details</a>
+                    <a href="zerona product/proposal.pdf" class="block py-3 vivid-gradient text-white rounded-xl shadow-lg" target="_blank">제안서 다운로드</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Video 1 - Background) -->
+    <header class="hero-video-container vivid-gradient">
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="zerona product/video1.mp4" type="video/mp4">
+        </video>
+        <div class="relative z-10 text-center text-white px-4 max-w-5xl pt-20 pb-20 md:pb-32">
+            <span class="inline-block px-4 py-1 rounded-full bg-white/20 backdrop-blur-md text-sm font-bold mb-6 uppercase tracking-wider">Next Generation Air Care</span>
+            <h1 class="text-5xl md:text-8xl font-black mb-6 leading-tight drop-shadow-2xl">
+                Breathe <span class="text-yellow-400">Better,</span><br>Live <span class="text-cyan-400">Safe.</span>
+            </h1>
+            <p class="text-xl md:text-2xl font-medium opacity-90 mb-12">당신의 공간을 위한 압도적인 기술의 진보</p>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="#products" class="bg-white text-blue-900 px-10 py-4 rounded-full font-black text-lg shadow-2xl hover:bg-gray-100 transition transform hover:scale-105">제품 둘러보기</a>
+                <a href="#tech" class="bg-transparent border-2 border-white/50 text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-white/10 transition">핵심 기술력</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Brand Intro -->
+    <section id="about" class="py-24 md:py-32 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-black text-gray-900 mb-10 uppercase tracking-tight text-blue-900">ZERONA: Clean & Safety</h2>
+            <p class="text-lg md:text-xl leading-relaxed text-gray-600 font-medium">
+                제로나는 단순한 가전을 넘어 당신의 라이프스타일을 보호합니다.<br class="hidden md:block">
+                첨단 광촉매 기술을 통해 공기 중 위협을 무력화하고,<br class="hidden md:block">
+                모든 공간에 신선함을 불어넣는 살균 솔루션을 제공합니다.
+            </p>
+        </div>
+    </section>
+
+    <!-- Differentiation Section -->
+    <section id="differentiation" class="py-24 md:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-end justify-between mb-20">
+                <div class="max-w-2xl">
+                    <h2 class="text-4xl md:text-5xl font-black text-gray-900 mb-6 uppercase">기술의 차별화</h2>
+                    <p class="text-gray-500 text-lg">기존 공기청정기와는 차원이 다른 4대 핵심 가치</p>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="group">
+                    <div class="rounded-3xl overflow-hidden mb-6 h-64 md:h-80 bg-gray-100 shadow-lg border border-gray-100">
+                        <img src="zerona product/img9.png" alt="Diff 1" class="w-full h-full object-cover tech-img" loading="lazy">
+                    </div>
+                    <h4 class="text-xl md:text-2xl font-bold mb-3 text-blue-900 text-center">능동형 살균</h4>
+                    <p class="text-gray-500 text-sm leading-relaxed text-center px-2">살균 물질을 공간 전체로 확산시켜 구석구석 정화합니다.</p>
+                </div>
+                <div class="group">
+                    <div class="rounded-3xl overflow-hidden mb-6 h-64 md:h-80 bg-gray-100 shadow-lg border border-gray-100">
+                        <img src="zerona product/img10.png" alt="Diff 2" class="w-full h-full object-cover tech-img" loading="lazy">
+                    </div>
+                    <h4 class="text-xl md:text-2xl font-bold mb-3 text-blue-900 text-center">검증된 안전성</h4>
+                    <p class="text-gray-500 text-sm leading-relaxed text-center px-2">세포독성 제로 인증으로 반려동물과 아이가 있는 집에서도 안심할 수 있습니다.</p>
+                </div>
+                <div class="group">
+                    <div class="rounded-3xl overflow-hidden mb-6 h-64 md:h-80 bg-gray-100 shadow-lg border border-gray-100">
+                        <img src="zerona product/img11.png" alt="Diff 3" class="w-full h-full object-cover tech-img" loading="lazy">
+                    </div>
+                    <h4 class="text-xl md:text-2xl font-bold mb-3 text-blue-900 text-center">스마트 AI 케어</h4>
+                    <p class="text-gray-500 text-sm leading-relaxed text-center px-2">실시간 대기 오염도를 분석하여 스스로 모드를 변경합니다.</p>
+                </div>
+                <div class="group">
+                    <div class="rounded-3xl overflow-hidden mb-6 h-64 md:h-80 bg-gray-100 shadow-lg border border-gray-100">
+                        <img src="zerona product/img12.png" alt="Diff 4" class="w-full h-full object-cover tech-img" loading="lazy">
+                    </div>
+                    <h4 class="text-xl md:text-2xl font-bold mb-3 text-blue-900 text-center">첨단 살균,탈취기술</h4>
+                    <p class="text-gray-500 text-sm leading-relaxed text-center px-2">공간살균뿐만 아니라 강력한 탈취효과를 경험하세요.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Section -->
+    <section id="tech" class="py-24 md:py-32 vivid-gradient text-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="order-2 md:order-1">
+                    <div class="rounded-3xl overflow-hidden shadow-2xl border-8 border-white/10 aspect-16-9">
+                        <img src="zerona product/img13.png" alt="Principle" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                </div>
+                <div class="order-1 md:order-2 text-center md:text-left">
+                    <h2 class="text-3xl md:text-4xl font-black mb-8 leading-tight">빛의 파동으로<br>세균의 연결고리를 끊다</h2>
+                    <p class="text-lg opacity-80 mb-10 leading-relaxed font-medium">
+                        제로나의 하이드록실 라디칼 기술은 화학 성분 없이 오직 빛과 수분만을 이용하여 바이러스를 파괴합니다. 
+                        가장 깨끗하면서도 가장 강력한 살균의 정점입니다.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 md:gap-6">
+                        <div class="bg-white/10 backdrop-blur-md p-4 md:p-6 rounded-2xl border border-white/20 text-center">
+                            <div class="text-2xl md:text-3xl font-black text-cyan-400 mb-2">99.9%</div>
+                            <div class="text-xs font-bold uppercase tracking-widest">Sterilization</div>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-md p-4 md:p-6 rounded-2xl border border-white/20 text-center">
+                            <div class="text-2xl md:text-3xl font-black text-yellow-400 mb-2">Safe</div>
+                            <div class="text-xs font-bold uppercase tracking-widest">Non-Toxic</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-24 md:py-32 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl md:text-5xl font-black text-gray-900 mb-6 uppercase">ZERONA Lineup</h2>
+                <p class="text-gray-500 text-xl font-medium">공간의 크기에 맞춘 최적의 살균 솔루션</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-32">
+                <!-- Product 1 -->
+                <div class="bg-white p-8 rounded-3xl shadow-xl card-hover text-center border border-gray-100">
+                    <img src="zerona product/img1.png" alt="SV-1010" class="h-40 mx-auto mb-6 object-contain" loading="lazy">
+                    <h3 class="text-xl md:text-2xl font-bold mb-2 text-blue-900">SV-1010</h3>
+                    <p class="text-blue-600 font-bold mb-4">대형 공간용 (30평)</p>
+                    <a href="#detail-1" class="text-gray-400 hover:text-blue-600 font-bold text-sm underline">상세정보 보기</a>
+                </div>
+                <!-- Product 2 -->
+                <div class="bg-white p-8 rounded-3xl shadow-xl card-hover text-center border border-gray-100">
+                    <img src="zerona product/img2.png" alt="ZA-020" class="h-40 mx-auto mb-6 object-contain" loading="lazy">
+                    <h3 class="text-xl md:text-2xl font-bold mb-2 text-blue-900">ZA-020</h3>
+                    <p class="text-blue-600 font-bold mb-4">오피스/주거용 (20평)</p>
+                    <a href="#detail-2" class="text-gray-400 hover:text-blue-600 font-bold text-sm underline">상세정보 보기</a>
+                </div>
+                <!-- Product 3 -->
+                <div class="bg-white p-8 rounded-3xl shadow-xl card-hover text-center border border-gray-100">
+                    <img src="zerona product/img3.png" alt="DSV-C700" class="h-40 mx-auto mb-6 object-contain" loading="lazy">
+                    <h3 class="text-xl md:text-2xl font-bold mb-2 text-blue-900">DSV-C700</h3>
+                    <p class="text-blue-600 font-bold mb-4">소형/차량,화장실용 (10평)</p>
+                    <a href="#detail-3" class="text-gray-400 hover:text-blue-600 font-bold text-sm underline">상세정보 보기</a>
+                </div>
+                <!-- Service -->
+                <div class="bg-white p-8 rounded-3xl shadow-xl card-hover text-center border border-gray-100">
+                    <img src="zerona product/img4.png" alt="Space Care" class="h-40 mx-auto mb-6 object-cover rounded-xl" loading="lazy">
+                    <h3 class="text-xl md:text-2xl font-bold mb-2 text-blue-900">Space Care</h3>
+                    <p class="text-green-600 font-bold mb-4">유지관리 서비스</p>
+                    <a href="#detail-4" class="text-gray-400 hover:text-blue-600 font-bold text-sm underline">상세정보 보기</a>
+                </div>
+            </div>
+
+            <!-- Detailed Views -->
+            <div id="product-details" class="space-y-40">
+                <div id="detail-1" class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-16 items-center">
+                    <div class="rounded-3xl overflow-hidden shadow-2xl">
+                        <img src="zerona product/img5.png" alt="SV-1010 Detail" class="w-full" loading="lazy">
+                    </div>
+                    <div>
+                        <span class="text-blue-600 font-black tracking-widest uppercase text-sm">The Flagship</span>
+                        <h4 class="text-3xl md:text-4xl font-black mt-4 mb-6 uppercase text-blue-900">SV-1010 Premium</h4>
+                        <p class="text-gray-600 text-lg mb-8 leading-relaxed font-medium">30평 이상의 대형 오피스, 병원을 위한 플래그십 살균기입니다. TFT 터치 스크린으로 실시간 공기질을 한눈에 파악하세요.</p>
+                    </div>
+                </div>
+
+                <div id="detail-2" class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-16 items-center">
+                    <div class="order-2 md:order-1 md:text-right">
+                        <span class="text-purple-600 font-black tracking-widest uppercase text-sm">Urban Lifestyle</span>
+                        <h4 class="text-3xl md:text-4xl font-black mt-4 mb-6 uppercase text-blue-900">ZA-020 Urban</h4>
+                        <p class="text-gray-600 text-lg mb-8 leading-relaxed font-medium">벽걸이와 스탠드 겸용으로 인테리어 자유도를 높였습니다. 저소음 살균 모드로 침실에서도 쾌적하게 사용 가능합니다.</p>
+                    </div>
+                    <div class="order-1 md:order-2 rounded-3xl overflow-hidden shadow-2xl">
+                        <img src="zerona product/img6.png" alt="ZA-020 Detail" class="w-full" loading="lazy">
+                    </div>
+                </div>
+
+                <div id="detail-3" class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-16 items-center">
+                    <div class="rounded-3xl overflow-hidden shadow-2xl">
+                        <img src="zerona product/img7.png" alt="DSV-C700 Detail" class="w-full" loading="lazy">
+                    </div>
+                    <div>
+                        <span class="text-cyan-600 font-black tracking-widest uppercase text-sm">Personal Safety</span>
+                        <h4 class="text-3xl md:text-4xl font-black mt-4 mb-6 uppercase text-blue-900">DSV-C700 Compact</h4>
+                        <p class="text-gray-600 text-lg mb-8 leading-relaxed font-medium">이동하는 순간에도 안전을 책임지는 차량용,화장실용 살균기입니다.</p>
+                    </div>
+                </div>
+
+                <div id="detail-4" class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-16 items-center">
+                    <div class="order-2 md:order-1">
+                        <span class="text-green-600 font-black tracking-widest uppercase text-sm">Expert Care</span>
+                        <h4 class="text-3xl md:text-4xl font-black mt-4 mb-6 uppercase text-blue-900">Space Care Service</h4>
+                        <p class="text-gray-600 text-lg mb-8 leading-relaxed font-medium">에코랜드와 함께하는 전문가 그룹의 정기 공기질 관리 서비스입니다. 필터 교체부터 시스템 점검까지 토탈 위생을 보장합니다.</p>
+                    </div>
+                    <div class="order-1 md:order-2 rounded-3xl overflow-hidden shadow-2xl">
+                        <img src="zerona product/img8.png" alt="Service Detail" class="w-full" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Media Center (Videos Fixed) -->
+            <div class="mt-40 max-w-4xl mx-auto flex flex-col gap-12 md:gap-16 px-4">
+                <div class="text-center mb-8 px-4">
+                    <h3 class="text-3xl font-black text-gray-900 uppercase">ZERONA Media Center</h3>
+                    <p class="text-gray-500 mt-2 font-medium">영상으로 확인하는 압도적인 살균 퍼포먼스</p>
+                </div>
+                
+                <!-- Video 1 Section (Fix Applied) -->
+                <div class="rounded-[2.5rem] overflow-hidden shadow-2xl bg-black aspect-16-9 group relative">
+                    <video controls playsinline class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition duration-700">
+                        <source src="zerona product/video1.mp4" type="video/mp4">
+                        브라우저가 동영상을 지원하지 않습니다.
+                    </video>
+                    <div class="absolute inset-0 flex items-center justify-center pointer-events-none text-center">
+                        <p class="text-white font-black text-xl uppercase tracking-[0.2em] opacity-40">Brand Promotion</p>
+                    </div>
+                </div>
+
+                <!-- Video 2 Section (Fix Applied) -->
+                <div class="rounded-[2.5rem] overflow-hidden shadow-2xl bg-black aspect-16-9 group relative">
+                    <video controls playsinline class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition duration-700">
+                        <source src="zerona product/video2.mp4" type="video/mp4">
+                        브라우저가 동영상을 지원하지 않습니다.
+                    </video>
+                    <div class="absolute inset-0 flex items-center justify-center pointer-events-none text-center">
+                        <p class="text-white font-black text-xl uppercase tracking-[0.2em] opacity-40">Core Technology</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 md:py-32 bg-[#0a192f] text-white text-center">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-black mb-10 leading-tight uppercase tracking-tight">Better Air, <br class="md:hidden"> Better Business.</h2>
+            <div class="flex flex-col sm:flex-row justify-center gap-6">
+                <a href="zerona product/proposal.pdf" class="vivid-gradient text-white px-10 md:px-12 py-5 rounded-full font-black text-lg md:text-xl shadow-2xl hover:scale-105 transition transform" target="_blank">
+                    상세 제안서 PDF 다운로드
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="h-[300px] bg-[#374151] text-gray-400 text-sm flex flex-col justify-center items-center px-4">
+        <div class="max-w-7xl w-full mx-auto px-6 flex flex-col md:flex-row justify-between items-center md:items-start gap-8">
+            <div class="text-center md:text-left">
+                <span class="text-white text-3xl font-black tracking-tighter uppercase">ZERONA</span>
+                <p class="mt-4 font-bold leading-relaxed text-gray-300">
+                    (주)에코랜드솔루션 <br>
+                    경기도 수원시 권선구 수성로로 8 (중소기업성장지원센터) 2층 202호 <br>
+                    대표전화: 031-227-3396
+                </p>
+            </div>
+            <div class="text-center md:text-right space-y-4 hidden md:block">
+                <p class="text-white font-bold mb-2">Quick Links</p>
+                <div class="flex flex-wrap justify-center md:justify-end gap-x-6 gap-y-2 text-xs uppercase font-bold text-gray-400">
+                    <a href="#about" class="hover:text-white transition">Brand</a>
+                    <a href="#differentiation" class="hover:text-white transition">Diff</a>
+                    <a href="#tech" class="hover:text-white transition">Tech</a>
+                    <a href="#products" class="hover:text-white transition">Products</a>
+                </div>
+            </div>
+        </div>
+        <div class="w-full max-w-7xl mx-auto px-6 mt-12 pt-6 border-t border-gray-600 text-[10px] md:text-xs tracking-[0.2em] uppercase opacity-60 text-center">
+            <p>© 2026 ECOLAND SOLUTION. ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('open');
+        }
+    </script>
+
+</body>
+</html>
